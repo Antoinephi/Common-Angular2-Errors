@@ -10,4 +10,7 @@
 |Can't bind to 'routerLink' since it isn't a known native property
 |If you use a directive/component in a template, you should define this one as a dependency for the component, thanks to the directives property of the @Component decorator.
 
+|zone.js:323 Uncaught SyntaxError: Unexpected token <
+| It's usually a path problem. Either the module loader is not properly configured, or the path for import is wrong.
+Angular will serve instead your 'index.html' because your server is configured to redirect every request to '/' which causes the error.
 |===
